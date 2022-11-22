@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="form2style.css">
+    <title>F1 Survey Form</title>
+  </head>
+  <body>
+    <h1 id="title">F1 Survey Form</h1>
+    <p id="description">This is a survey about F1 teams.</p>
+    <form id="survey-form" method="post" action='https://myforms.com'>
+      <fieldset>
+        <label id="name-label" for="name">Name: <input id="name" placeholder="Enter your name." type="text" required></label>
+        <label id="email-label" for="email">Email: <input id="email" placeholder="Enter your email." type="email" required></label>
+        <label id="number-label" for="number">Age: <input id="number" placeholder="18" type="number" min="13" max="120" required></label>
+      </fieldset>
+      <fieldset>
+        <label>Would you recomand F1?</label>
+          <label for="1"><input id="1" value="r1" type="radio" name="check" class="inline">Definitely</label>
+          <label for="2"><input id="2" value="r2" type="radio" name="check" class="inline">Maybe</label>
+          <label for="3"><input id="3" value="r3" type="radio" name="check" class="inline">Not sure</label>
+        <label for="dropdown">
+          What team are you hyped about?
+          <select id="dropdown">
+            <option value="">Select your team.</option>
+            <option value="1">Red Bull Racing</option>
+            <option value="2">Ferrari</option>
+            <option value="3">Mercedes</option>
+            <option value="4">Alpine</option>
+            <option value="5">McLaren</option>
+            <option value="6">Alfa Romeo</option>
+            <option value="7">Aston Martin</option>
+            <option value="8">Haas F1 Team</option>
+            <option value="9">AlphaTauri</option>
+            <option value="10">Williams</option>
+          </select>
+        </label>
+        <label>What would you like to see changed?<div class="div1">(Check all that apply)</div></label>
+        <label for="c1"><input id="c1" value="c1" type="checkbox" class="inline">Car model.<label>
+        <label for="c2"><input id="c2" value="c2" type="checkbox" class="inline">Founds invested.<label>
+        <label for="c3"><input id="c3" value="c3" type="checkbox" class="inline">The team.<label>
+        <label for="c4"><input id="c4" value="c4" type="checkbox" class="inline">The drivers.<label>
+        <label for="c5"><input id="c5" value="c5" type="checkbox" class="inline">Nothing, they are perfect.<label>
+      </fieldset>
+      <fieldset>
+        <label for="suggestions">Any other suggestions?
+        <textarea id="suggestions" name="suggestions" rows="3" cols="30" placeholder="I would like to talk about..."></textarea>
+        </label >
+      </fieldset>
+      <input id="submit" type="submit" value="Submit">
+    </form>
+  </body>
+</html>
