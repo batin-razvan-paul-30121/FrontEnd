@@ -1,0 +1,29 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #AFBED1;
+    text-align: center;
+    color: #32373B;
+    font-family: Cambria, Cochin, Georgia, Times, Times New Roman, serif;
+    font-weight: bold;
+}
+span{
+    font-size: 2rem;
+}
+.btn-container{
+    margin-top: 20px;
+}
+.btn{
+    border-radius: 20px;
+    padding: 5px;
+    width: 200px;
+    margin: 0px 5px;
+    font-weight: bold;
+}
